@@ -17,6 +17,13 @@ export class DataBindComponent implements OnInit {
   imagem:string = "https://s2.glbimg.com/9DtSY6ZLYx173tSW9KZiNcoIbDQ=/620x430/e.glbimg.com/og/ed/f/original/2019/02/15/gettyimages-8454560281.jpg"
   mensagem(){window.alert("olá mundo");}
 
+  //Objeto
+  pessoa:any={
+    nome: "joão",
+    idade: 22,
+    cidade: "Sobradinho"
+  }
+
 
 
 
