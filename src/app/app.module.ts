@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MeuComponenteComponent } from './meu-componente/meu-componente.component';
 import { DataBindComponent } from './data-bind/data-bind.component';
 import { FormsModule } from '@angular/forms';
+import { TemplateComponent } from './template/template.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuComponenteComponent,
-    DataBindComponent
+    DataBindComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
