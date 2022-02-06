@@ -1,6 +1,17 @@
 <h3>{{nome}}</h3>
-<img src="{{imagem}}"><br>
-<img [src]="imagem">
+
+<img src="{{imagem}}" height="100">
+
 <br>
-<img bind-src="imagem">
+
+<img [src]="imagem" height="100">
+
+<br>
+
+<img bind-src="imagem" height="100">
+
 <h2>{{valor+valor2}}</h2>
+
+<hr>
+
+<button (click)="mensagem()">Clique aqui</button>
