@@ -7,13 +7,15 @@ import { MeuComponenteComponent } from './meu-componente/meu-componente.componen
 import { DataBindComponent } from './data-bind/data-bind.component';
 import { FormsModule } from '@angular/forms';
 import { TemplateComponent } from './template/template.component';
+import { TubosComponent } from './tubos/tubos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuComponenteComponent,
     DataBindComponent,
-    TemplateComponent
+    TemplateComponent,
+    TubosComponent
   ],
   imports: [
     BrowserModule,
