@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { TemplateComponent } from './template/template.component';
 import { TubosComponent } from './tubos/tubos.component';
 import { Exemplo07yComponent } from './exemplo07y/exemplo07y.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { Exemplo07yComponent } from './exemplo07y/exemplo07y.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
