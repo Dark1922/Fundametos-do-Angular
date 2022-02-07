@@ -18,13 +18,17 @@ export class CursosService {
     new Curso('PHP', 590, "Desenvolvimento"),
     new Curso('Photoshop', 470, "Design")
   ];
-  //cadastro de cursos
 
+  //cadastro de cursos
+  public cadastrar(curso: Curso) {
+     //salva um vetor sendo texto numbero ou objeto, aqyu sendo o curso
+    this.vetorCursos.push(curso);
+  }
   //Seleão de cursos
 
   //Alteração de cursos
 
   //Exclusão de cursos
 
-  //Seleção de um curso especifico
+
 }
