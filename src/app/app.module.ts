@@ -8,6 +8,7 @@ import { DataBindComponent } from './data-bind/data-bind.component';
 import { FormsModule } from '@angular/forms';
 import { TemplateComponent } from './template/template.component';
 import { TubosComponent } from './tubos/tubos.component';
+import { Exemplo07yComponent } from './exemplo07y/exemplo07y.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TubosComponent } from './tubos/tubos.component';
     MeuComponenteComponent,
     DataBindComponent,
     TemplateComponent,
-    TubosComponent
+    TubosComponent,
+    Exemplo07yComponent
   ],
   imports: [
     BrowserModule,
