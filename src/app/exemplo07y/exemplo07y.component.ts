@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Curso } from './Curso';
+import { CursosService } from './cursos.service';
 
 @Component({
   selector: 'app-exemplo07y',
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exemplo07yComponent implements OnInit {
 
-  constructor() { }
+  //Atributos
+  private vetorCursos!: Curso[];
+  private curso!: Curso;
+  private id!:number; //identificação do curso
 
+  //contrutor
+  constructor(private servico:CursosService) { }
+
+  //inicialização
   ngOnInit(): void {
   }
 
