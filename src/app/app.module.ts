@@ -10,6 +10,11 @@ import { FormsModule } from '@angular/forms';
 import { TemplateComponent } from './template/template.component';
 import { TubosComponent } from './tubos/tubos.component';
 import { Exemplo07yComponent } from './exemplo07y/exemplo07y.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { Error404Component } from './error404/error404.component';
+import { AuthGuard } from './auth.guard';
+
 
 
 
@@ -20,7 +25,11 @@ import { Exemplo07yComponent } from './exemplo07y/exemplo07y.component';
     DataBindComponent,
     TemplateComponent,
     TubosComponent,
-    Exemplo07yComponent
+    Exemplo07yComponent,
+    InicioComponent,
+    SobreComponent,
+    Error404Component,
+
   ],
   imports: [
     BrowserModule,
@@ -28,7 +37,7 @@ import { Exemplo07yComponent } from './exemplo07y/exemplo07y.component';
     FormsModule,
     CommonModule
   ],
-  providers: [],
+  providers: [AuthGuard],//força ele
   bootstrap: [AppComponent]
 })
 export class AppModule { }
