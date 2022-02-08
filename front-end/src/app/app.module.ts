@@ -9,7 +9,7 @@ import { DataBindComponent } from './data-bind/data-bind.component';
 import { FormsModule } from '@angular/forms';
 import { TemplateComponent } from './template/template.component';
 import { TubosComponent } from './tubos/tubos.component';
-import { Exemplo07yComponent } from './exemplo07y/exemplo07y.component';
+
 import { InicioComponent } from './inicio/inicio.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { Error404Component } from './error404/error404.component';
@@ -27,7 +27,6 @@ import { HttpClientModule } from '@angular/common/http';
     DataBindComponent,
     TemplateComponent,
     TubosComponent,
-    Exemplo07yComponent,
     InicioComponent,
     SobreComponent,
     Error404Component,
