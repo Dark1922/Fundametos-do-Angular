@@ -1,9 +1,8 @@
 
 import { Cursos } from './CursoModel';
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { CursoService } from './curso.service';
-import { ActivatedRoute } from '@angular/router';
+
 
 
 @Component({
@@ -18,7 +17,7 @@ export class AngularApiComponent implements OnInit {
   total: any;
 
 
-  constructor(private cursoService:CursoService, private routerActive : ActivatedRoute) { }
+  constructor(private cursoService:CursoService) { }
 
   ngOnInit(): void {
         this.selecao();
