@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+</head>
+<body>
+
+    <form>
+      <div class="form-group col-md-4 offset-md-4 mt-5">
+        <label for="nome">Nome</label>
+        <input type="text" #nomeValidate="ngModel" [(ngModel)]="curso.nomeCurso" name="nome" id="nome" class="form-control" required="true" autocomplete="false"/>
+      </div>
+
+
+    <div class="form-row">
+    <div class="form-group col-md-4 offset-md-4">
+      <label for="area">Área</label>
+      <input type="text"  [(ngModel)]="curso.areaCurso" name="area" id="area" class="form-control" required="true" autocomplete="false" />
+    </div>
+    <div class="form-group col-md-4 offset-md-4">
+      <label for="valor">Valro</label>
+      <input type="number"   [(ngModel)]="curso.valorCurso" name="number" id="valor" class="form-control" required="true" autocomplete="false" />
+    </div>
+    </div>
+    <div class="form-group col-md-4 offset-md-4 mt-2">
+      <button (click)="cadastar()" type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+    </form>
+  <!--
+  <button (click)="cadastar()">Cadastrar</button>
+  <button (click)="selecao()">Selecionar</button>
+  <button (click)="alterar()">Alterar</button>
+  <button (click)="remover()">Remover</button>-->
+
+
+  <!-- Tabela -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome do Curso</th>
+        <th scope="col">Aréa do Curso</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let curso of cursos; let i = index;">
+      <th scope="row">{{curso.id}}</th>
+      <td>{{curso.nomeCurso}}</td>
+      <td>{{curso.areaCurso}}</td>
+      <td>{{curso.valorCurso}}</td>
+      <td><button (click)="remover(curso.id, i)" type="submit" class="btn btn-danger">Deletar</button>
+      <button (click)="selecionarCurso(curso)" type="submit" class="btn btn-secondary m-lg-1">Selecionar</button></td>
+     </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>

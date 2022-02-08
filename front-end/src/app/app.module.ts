@@ -14,6 +14,8 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { Error404Component } from './error404/error404.component';
 import { AuthGuard } from './auth.guard';
+import { AngularApiComponent } from './angular-api/angular-api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -29,13 +31,15 @@ import { AuthGuard } from './auth.guard';
     InicioComponent,
     SobreComponent,
     Error404Component,
+    AngularApiComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule,
   ],
   providers: [AuthGuard],//força ele
   bootstrap: [AppComponent]
